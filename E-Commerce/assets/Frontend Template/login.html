@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="images/logo-removebg-preview (1).png">
+
+    <link rel="stylesheet" href="./css/sign.css">
+    <link rel="stylesheet" href="./css/all.css">
+
+
+</head>
+
+<body>
+    <div class="pagesign vh-100">
+        <div class="spiner">
+            <span class="loader"></span>
+        </div>
+        <nav class="py-2">
+            <div class=" container w-75 mx-auto">
+                <div class=" row py-1 d-flex justify-content-between  align-items-center ">
+                    <div class="col-md-3 col-9 d-flex mt-1 logo">
+                        <i class="fas fa-store text-warning"></i>
+                        <div class="d-flex flex-column ">
+                            <a href="./index.html">
+                                <h4 class="mb-0 fs-3 fw-bolder text-white"> Store</h4>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 col-3">
+                        <!-- <i class="fa-solid fa-magnifying-glass m-1 fs-2"></i> -->
+                        <!-- <i class="fa-solid fa-xmark fs-2 m-1 d-none" id="closeSearch"></i> -->
+                        <input type="text" id="search" class="form-control py-2 ps-3 rounded-5 bg-white" placeholder="Type To Search...">
+                    </div>
+                    <div class="col-md-3" id="ulCard">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ">
+                                <a class="nav-link " aria-current="page " href="./login.html"><i class="fas fa-user"></i></a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link " aria-current="page " id="cart" href="./Cart2.html"><span><i class="fas fa-shopping-cart"></i></span></a>
+                            </li>
+
+                            <li class="nav-item ">
+                                <a class="nav-link " aria-current="page " id="favorite" href="favorite.html"><span><i class="fa-solid position-relative fa-heart top-0 end-0 "></i></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="back bg-white p-3 border-0 d-flex justify-content-between">
+            <a href="./index.html">
+                <i class="fa fa-backward text-black ms-md-5"></i>
+                <span class="fw-bold fs-4 ms-2 text-black">Home</span><span class="text-black-50 fs-5"> > LOGIN</span>
+            </a>
+        </div>
+        <div id="mainpage" class=" container  py-5">
+
+            <div class="signIncontent m-auto p-md-5 p-4">
+                <div class="text-center">
+                    <h1> LOGIN </h1>
+                </div>
+                <form action="">
+                    <input id="signinEmail" class="text-black form-control mt-4 my-4" placeholder="Your email" type="email">
+                    <input id="signinPassword" class="text-black form-control my-4" placeholder="Your password" type="password">
+                    <div class="text-center">
+                        <button id="signIn" class="btns w-25">Login</button>
+                    </div>
+                </form>
+
+                <div class="text-center">
+                    <p>Don’t have an account? <a href="signUp.html">SignUp</a></p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bottom-0 position-fixed bg-white">
+            <div class="container text-center text-black">
+                <p class="mb-0">© Online Store. All Rights Reserved</p>
+                <p>Created by Amr Sabry</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+
+</body>

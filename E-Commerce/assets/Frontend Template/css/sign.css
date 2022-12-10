@@ -1,0 +1,97 @@
+body {
+    /* background: linear-gradient(0deg, rgba(0, 20, 241, 0.515) 0%, rgba(1, 249, 241, 0.564) 60%); */
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+#home {
+    height: 75vh;
+}
+
+input {
+    border: 0 !important;
+    border: 1px solid rgba(0, 0, 0, 0.16) !important;
+    width: 100%;
+    padding: 5px;
+}
+
+input:hover {
+    box-shadow: 1px 1px 10px #02c8ff72;
+    border-color: #17a3b800!important;
+}
+
+.btns {
+    font-size: 17px;
+    border-radius: 4px;
+    border: transparent;
+    padding: 5px 10px;
+    color: #fff;
+    background: linear-gradient(90deg, rgb(77, 70, 211) 0%, rgba(72, 72, 187, 1) 36%, rgba(0, 212, 255, 1) 100%);
+}
+
+.btns:hover {
+    background-color: #0bb3cd;
+    background: linear-gradient(90deg, rgba(0, 213, 255, 0.61) 0%, rgba(0, 51, 255, 0) 50%, rgba(0, 213, 255, 0.653) 100%) !important;
+    color: rgb(2, 2, 2);
+}
+
+h1 {
+    font-weight: 600;
+    color: #17a3b8;
+}
+
+.signIncontent {
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0px 0px 15px 2px lightblue;
+}
+
+@media screen and (max-width:768px) {
+    .contant-contain,
+    .welcome-contain,
+    .container,
+    .signIncontent {
+        width: 100% !important;
+    }
+}
+
+input,
+textarea {
+    background-color: transparent !important;
+    color: #fff !important;
+}
+
+button a:hover {
+    color: rgb(0, 0, 0) !important;
+}
+
+a {
+    transition: .4s all;
+    color: #0bb3cd !important;
+}
+
+a:hover {
+    color: #00ff2a !important;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.letter h3 {
+    letter-spacing: 5px;
+    font-weight: 600;
+}
+
+.letter button {
+    width: 10%;
+    letter-spacing: 1px;
+}
+
+label {
+    font-size: 15px;
+    color: rgba(117, 115, 115, 0.864);
+}
