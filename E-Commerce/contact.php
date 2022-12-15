@@ -35,7 +35,7 @@ require "inc/header.php";
 
     <!-- side-bar section ends -->
 
-    <!-- contact info section starts  -->
+    <!-- contact info section starts -->
 
     <section class="info-container">
 
