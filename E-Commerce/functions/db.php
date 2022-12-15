@@ -106,21 +106,6 @@ class db
     }
 
     
-    //search
-    // public function search($value)
-    // {
-    //     $sql = "SELECT * FROM products WHERE name LIKE '%.$value.%'";
-    //     $query = mysqli_query($this->connection, $sql);
-    //     $data = array();
-    //     while($row = mysqli_fetch_assoc($query))
-    //     {
-    //         $data[] = $row;
-    //     }
-        
-    //     return header("Location: ./search.php");
-    // }
-
-    
     
     public function __destruct()
     {
