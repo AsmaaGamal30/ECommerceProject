@@ -1,6 +1,8 @@
 <?php require "config.php";?>
 <?php require 'inc/header.php';?>
-<?php include "inc/sidebar.php"; ?>
+<?php include "inc/sidebar.php"; 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,29 +30,46 @@
 <section class="shopping-cart">
 
     <h1 class="heading">your <span>products</span></h1>
+    
+    <?php
+    $db = new db();
+    if(isset($_POST['delete'])){
+        $delete = $db->deleteFrom($_POST['product_id'],"carts");
+    }
+           
+             $allProducts = $db->getAll("carts");
+            foreach ($allProducts as $product) : 
+                $fav = $db->getAllFrom("products","id",$product['product_id']);
+                array_map(function ($product) { $sum=0 ; global $sum; 
+            ?>
 
     <div class="box-container">
 
         <div class="box">
 
-            <button><i class="fas fa-times"></i></button>
-            <img src="<?php echo ASSETS; ?>images/mopiles/8.jpg" alt="">
+            
+            <img src="<?php echo $product['img'] ?>" alt="">
             <div class="content">
-                <h3>smartphone</h3>
-                <form action="">
+                <h3><?php echo $product['name'] ?></h3>
+                <form action="" method="post">
+                <input type="hidden" name="product_id" value="<?php echo $product['id'] ?>">
+                    <button name="delete"><i class="fas fa-times" > </i></button>
                     <span>quantity : </span>
                     <input type="number" name="" value="1" id="">
                 </form>
-                <div class="price">249.99EGP <span>399.99</span></div>
+                <div class="price"><?php echo $product['price'];
+                $sum+= $product['price']; ?> </div>
             </div>
         </div>
 
     </div>
-
+ <?php
+                }, $fav);
+            endforeach;
+            ?>
     <div class="cart-total">
-        <h3> subtotal : <span>1499.94EGP</span> </h3>
-        <h3> discount : <span>-99.94EGP</span> </h3>
-        <h3> subtotal : <span>1400.00EGP</span> </h3>
+        <h3> subtotal : <span><?php echo  $sum ;?></span> </h3>
+       
         <button><a href="buypage.php">checkout</a></button>
     </div>
 

@@ -69,7 +69,7 @@
                     
                     <?php if(isset($_SESSION['id'])): ?>
                     <form action="" method="post">
-                    <button type="submit" name="order" class="mt-3 addbtn text-center fs-5">Add to Cart</button>
+                    <button type="submit" name="add" class="mt-3 addbtn text-center fs-5">Add to Cart</button>
                     </form>
                     <?php endif; ?>
                     
@@ -78,10 +78,19 @@
         </div>
     </div>
     <?php
+      
+       $db = new db();
+       $allProducts = $db->getAll("carts");
+       if (isset($_POST['add']))
+        {
+           $cartProducts = $db->addTo($_SESSION['id'], $item['id'],"carts");
+       }  
+       
     endif;
     endforeach;
     ?>
-
+    
+  
 </section>
 
 <footer>

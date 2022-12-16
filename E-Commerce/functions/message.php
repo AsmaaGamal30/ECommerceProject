@@ -12,6 +12,6 @@ if (isset($success)&& $success!='')
         <h3 class="alert alert-success text-center"> <?php echo $success; ?>  </h3>
 
 <?php
-header("refresh:4;url=login.php");
+header("refresh:4;url=index.php");
 }
 ?>

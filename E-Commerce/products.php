@@ -55,7 +55,7 @@
             $favProducts = $db->addTo($_POST['user_id'], $_POST['product_id'],"favourites");
         }
         ?>
-
+     
         <!-- product item goes here -->
         <?php include "inc/productItem.php" ?>
 
