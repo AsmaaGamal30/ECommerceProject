@@ -79,6 +79,7 @@ require "inc/header.php";
         $message = $_POST['message'];
         $sql = "INSERT INTO `contact`(`name` ,`email`,`phone`,`subject`,`message`) VALUES ( '$name','$email','$phone','$subject','$message')";
         $success = $db->db_insert($sql);
+        
     }
     ?>
 

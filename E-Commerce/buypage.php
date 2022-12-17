@@ -1,4 +1,7 @@
-<?php include "inc/header2.php"; ?>
+<?php
+ include "inc/header2.php"; 
+
+?>
     <div class="back bg-white p-3 border-0 d-flex justify-content-between">
         <a href="index.php">
             <i class="fa fa-backward  text-black ms-md-5"></i>
@@ -22,8 +25,15 @@
         $security_code = $_POST['security_code'];
         $postal_code = $_POST['postal_code'];
         $user_id = $_SESSION['id'];
+        if($first_name=='' || $last_name=='' || $email=='' || $number=='' || $address=='' || $number_of_card =='' || $expiry_date =='' || $security_code =='' || $postal_code =='' ||$user_id == '' )
+        {
+            echo '<h4 style="color:red;">SOMETHING WENT WRONG , PLEASE TRY AGAIN !</h4>';
+
+        }
+        else{
         $sql = "INSERT INTO `payment`(`first_name`,`last_name`,`email`,`phone`,`address`,`number_of_card`,`expiry_date`,`security_code`,`postal_code`,`user_id`) VALUES ('$first_name','$last_name','$email','$number','$address','$number_of_card','$expiry_date','$security_code','$postal_code','$user_id')";
         $success = $db->db_insert($sql);
+        
         if($success)
         {
             $query = 
@@ -44,6 +54,7 @@
         }
 
         }
+    }
 
 
         ?>
