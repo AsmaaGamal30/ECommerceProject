@@ -22,6 +22,7 @@
                 $hash_pass = password_hash($password, PASSWORD_DEFAULT);
                 $sql = "INSERT INTO `users`(`first_name` ,`last_name`,`phone`,`email`,`password`) VALUES ( '$fname','$lname','$number','$email','$hash_pass')";
                 $success = $db->db_insert($sql);
+                header("Location: login.php");
 
             } else {
                 $errors = "Please fill filed";
@@ -38,19 +39,19 @@
                     <h1> SIGNUP </h1>
                 </div>
                 <form method="post" action="<?php  echo $_SERVER['PHP_SELF']?>">
-                    <label for="signupFName" class="mt-2">First_Name</label>
+                    <label for="signupFName" class="mt-2">First Name</label>
                     <input class="text-black form-control my-2" name="fname" id="signupFName" type="text">
 
-                    <label for="signupLName">Last_Name</label>
+                    <label for="signupLName">Last Name</label>
                     <input class="text-black form-control my-2" name="lname" id="signupLName" type="text">
 
-                    <label for="signupEmail">Your_Email</label>
+                    <label for="signupEmail">Your Email</label>
                     <input class="text-black form-control my-2" name="email" id="signupEmail" type="email">
 
-                    <label for="signupphone">Your_Number</label>
+                    <label for="signupphone">Your Number</label>
                     <input class="text-black form-control my-2" name="number" id="signupphone" type=" tel ">
 
-                    <label for="signupPassword">Your_Password</label>
+                    <label for="signupPassword">Your Password</label>
                     <input id="signupPassword " name="password" class="text-black form-control my-2 " type="password">
 
                     <div class="text-center">

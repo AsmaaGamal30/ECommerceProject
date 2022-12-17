@@ -40,6 +40,8 @@
     $id = $_GET['id']??4;
     $db = new db();
     $product = $db->getAll("products");
+    $allCart = $db->getAll("carts");
+    $get_id = $db->getID($allCart);
     foreach ($product as $item):
     if ($item['id'] == $id):
     ?>
@@ -58,7 +60,7 @@
                     </div>
                     <h4><b>Color : </b><span class="text-black-50"><?php echo $item['color']; ?></span></h4>
                     <h4 class="py-2"><b>Size   : </b><?php echo $item['size']; ?></h4>
-                    <h4><b class="text-black">Price : </b> <span id="price"><?php echo $item['price'] ;?></span></h4>
+                    <h4><b class="text-black">Price : </b> <span id="price"><?php echo $item['price'] ;?> EGP</span></h4>
                     <br>
 
                     <?php if(!isset($_SESSION['id'])): ?>
@@ -69,7 +71,17 @@
                     
                     <?php if(isset($_SESSION['id'])): ?>
                     <form action="" method="post">
-                    <button type="submit" name="add" class="mt-3 addbtn text-center fs-5">Add to Cart</button>
+                        <?php
+                        if(in_array($item['id'],$get_id ?? [])){
+                            echo '<button type="submit" disabled class="mt-3 btn btn-success text-center fs-5">In the Cart</button>';
+                        }
+                        else{
+                            echo '<button type="submit" name="add" class="mt-3 addbtn text-center fs-5">Add to Cart</button>';
+                        }
+
+                        ?>
+                    
+
                     </form>
                     <?php endif; ?>
                     

@@ -24,7 +24,7 @@
 <header class="header">
 
     <a href="./index.php" class="logo"> <i class="fas fa-store"></i> Store </a>
-    <?php include "searchBar2.php"; ?>
+    <!-- <?php include "searchBar2.php"; ?> -->
 
     <div class="icons">
         <div id="menu-btn" class="fas fa-bars"></div>

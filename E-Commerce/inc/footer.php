@@ -11,10 +11,10 @@
 </div>
 
 <div class="share">
-    <a href="#" class="fab fa-facebook-f"></a>
-    <a href="#" class="fab fa-twitter"></a>
-    <a href="#" class="fab fa-instagram"></a>
-    <a href="#" class="fab fa-linkedin"></a>
+    <a href="https://www.facebook.com/profile.php?id=100005384718882" class="fab fa-facebook-f"></a>
+    <a href="https://twitter.com/AsmaaGamal30" class="fab fa-twitter"></a>
+    <a href="https://www.instagram.com/asmaa.gamal30/" class="fab fa-instagram"></a>
+    <a href="https://www.linkedin.com/in/asmaagamal30/" class="fab fa-linkedin"></a>
 </div>
 
 <footer>

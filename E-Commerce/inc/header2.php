@@ -35,7 +35,7 @@
 
                     </div>
 
-                    <?php include "inc/searchBar.php"; ?>
+                    <!-- <?php include "inc/searchBar.php"; ?> -->
 
                     <div class="col-md-3" id="ulCard">
                         <ul class="navbar-nav">

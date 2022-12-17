@@ -31,7 +31,7 @@ include "inc/header2.php";
                             <div class="card-body">
                                 <b class="card-text m-0"><?php echo $product['name'] ?></b>
                                 <p><?php echo $product['color'] ?></p>
-                                <h5 class="card-title m-0"><?php echo $product['price'] ?></h5>
+                                <h5 class="card-title m-0"><?php echo $product['price'] ?> EGP</h5>
                             </div>
                             <form action="" method="post">
                                 <input type="hidden" name="product_id" value="<?php echo $product['id'] ?>">
@@ -46,6 +46,33 @@ include "inc/header2.php";
             ?>
         </div>
         </section>
+
+        <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   
 
         <footer>
             <div class="container text-center">

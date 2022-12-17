@@ -9,7 +9,6 @@ class db
     public $connection;
 
 
-
     public function __construct()
     {
         $this->connection = mysqli_connect($this->server, $this->username, $this->userpass, $this->dbname);
@@ -103,6 +102,27 @@ class db
         $sql = "DELETE FROM `$table` WHERE product_id=$product_id";
         $query = mysqli_query($this->connection, $sql);
         return $query;
+    }
+
+
+    // public function selectPrice()
+    // {
+
+    //     $sql = "SELECT SUM(price) From products 
+    //     INNER JOIN orders
+    //     ON products.id = orders.product_id";
+    //     $query = mysqli_query($this->connection, $sql);
+    //     return $query;
+    // }
+
+    public function getID($arr = null , $key = "product_id")
+    {
+        if ($arr != null) {
+            $id = array_map(function ($value) use($key){
+                return $value[$key];
+            }, $arr);
+            return $id;
+        }
     }
 
     
