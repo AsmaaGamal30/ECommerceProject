@@ -1,5 +1,4 @@
 <?php
-require 'config.php';
 require "inc/header.php";
 ?>
 
@@ -7,7 +6,6 @@ require "inc/header.php";
 <?php
 include "inc/sidebar.php";
 ?>
-
 
 <section class="home">
 
@@ -17,7 +15,7 @@ include "inc/sidebar.php";
 
             <div class="swiper-slide slide">
                 <div class="image">
-                    <img src="<?php echo ASSETS; ?>images/man.png" alt="">
+                    <img src="assets/images/man.png" alt="">
                 </div>
                 <div class="content">
                     <span>upto 50% off</span>

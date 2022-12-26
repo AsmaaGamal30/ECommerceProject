@@ -80,9 +80,9 @@ include "inc/header2.php";
                 <p>Created by Frontend Team</p>
             </div>
         </footer>
-        <script src="<?php echo ASSETS; ?>js/jquery-3.6.1.min.js "></script>
-        <script src="<?php echo ASSETS; ?>js/bootstrap.bundle.min.js "></script>
-        <script src="<?php echo ASSETS; ?>js/index.js "></script>
+        <script src="assets/js/jquery-3.6.1.min.js "></script>
+        <script src="assets/js/bootstrap.bundle.min.js "></script>
+        <script src="assets/js/index.js "></script>
         </body>
 
         </html>

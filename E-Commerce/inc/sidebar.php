@@ -4,9 +4,9 @@
     <div id="close-side-bar" class="fas fa-times"></div>
 
     <div class="user">
-        <img src="<?php echo ASSETS; ?>images/photo_2022-11-27_21-23-33.jpg" alt="">
+        <img src="./assets/images/photo_2022-11-27_21-23-33.jpg" alt="">
         <?php if(isset($_SESSION['userf_name'])) :?>
-        <h3><?php echo $_SESSION['userf_name']." " .$_SESSION['userl_name'];?></h3>
+        <h3><?php echo $_SESSION['userf_name']." ".$_SESSION['userl_name'];?></h3>
         <?php  endif; ?>
         <?php if(isset($_SESSION['userf_name'])) :?>
         <a href="./logout.php">log out</a>
@@ -20,8 +20,12 @@
         <?php if(!isset($_SESSION['userf_name'])) : ?>
         <a href="./login.php"> <i class="fas fa-angle-right"></i> login </a>
         <a href="./signUP.php"> <i class="fas fa-angle-right"></i> register </a>
+        <a href="./login.php"> <i class="fas fa-angle-right"></i> cart </a>
         <?php endif;?>
+        <?php if(isset($_SESSION['userf_name'])) : ?>
         <a href="./cart.php"> <i class="fas fa-angle-right"></i> cart </a>
+        <?php endif;?>
+
     </nav>
 
 </div>

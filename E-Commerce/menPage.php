@@ -56,7 +56,12 @@
         <?php include "inc/productItem.php" ?>
 </section>
 
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <footer>
     <div class="container text-center">
         <p class="mb-0">© Online Store. All Rights Reserved</p>

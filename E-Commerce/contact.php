@@ -10,7 +10,7 @@ require "inc/header.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Store | Contact</title>
-    <link rel="icon" href="<?php echo ASSETS; ?>images/logo-removebg-preview%20(1).png">
+    <link rel="icon" href="assets/images/logo-removebg-preview%20(1).png">
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -19,7 +19,7 @@ require "inc/header.php";
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- cusom css file link  -->
-    <link rel="stylesheet" href="<?php echo ASSETS; ?>css/contact,cart.css">
+    <link rel="stylesheet" href="assets/css/contact,cart.css">
 
 </head>
 

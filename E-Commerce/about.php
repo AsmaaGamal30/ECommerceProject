@@ -1,5 +1,4 @@
 <?php
-require 'config.php';
 require "inc/header.php";
 ?>
 <!DOCTYPE html>
@@ -10,15 +9,15 @@ require "inc/header.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Store | About</title>
-    <link rel="icon" href="<?php echo ASSETS; ?> images/logo-removebg-preview%20(1).png">
+    <link rel="icon" href="assets/images/logo-removebg-preview%20(1).png">
     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="<?php echo ASSETS; ?>css/all.css">
+    <link rel="stylesheet" href="assets/css/all.css">
 
     <!-- swiper css link  -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- cusom css file link  -->
-    <link rel="stylesheet" href="<?php echo ASSETS; ?>css/contact,cart.css">
+    <link rel="stylesheet" href="assets/css/contact,cart.css">
 
 </head>
 
@@ -36,7 +35,7 @@ require "inc/sidebar.php";
 <section class="about">
 
     <div class="image">
-        <img src="<?php echo ASSETS; ?>images/about-img.png" alt="">
+        <img src="assets/images/about-img.png" alt="">
     </div>
 
     <div class="content">
@@ -113,36 +112,36 @@ require "inc/sidebar.php";
         <div class="swiper-wrapper">
 
             <div class="swiper-slide slide">
-                <img src="<?php echo ASSETS; ?>images/pic-1.png" alt="">
+                <img src="assets/images/pic-1.png" alt="">
                 <h3>john deo</h3>
                 <span>dr</span>
                 <p>i love this website so much and everything i want i found in easy way.</p>
             </div>
 
             <div class="swiper-slide slide">
-                <img src="<?php echo ASSETS; ?>images/pic-2.png" alt="">
+                <img src="assets/images/pic-2.png" alt="">
                 <h3>lela ali</h3>
                 <span>Eng</span>
                 <p> it is so good and my order deliver quickly</p>
             </div>
 
             <div class="swiper-slide slide">
-                <img src="<?php echo ASSETS; ?>images/pic-3.png" alt="">
+                <img src="assets/images/pic-3.png" alt="">
                 <h3> saly ahmed </h3>
                 <span>teacher</span>
                 <p> i am so happy to find this website it is so easy to use and everything is so perfect</p>
             </div>
 
             <div class="swiper-slide slide">
-                <img src="<?php echo ASSETS; ?>images/pic-4.png" alt="">
-                <h3>sola ahmed</h3>
+                <img src="assets/images/pic-4.png" alt="">
+                <h3>Nahla</h3>
                 <span>designer</span>
                 <p>thanks alot for a quick service </p>
             </div>
 
             <div class="swiper-slide slide">
-                <img src="<?php echo ASSETS; ?>images/pic-5.png" alt="">
-                <h3>nahla nabil</h3>
+                <img src="assets/images/pic-5.png" alt="">
+                <h3>Abdelrahman</h3>
                 <span>doctor</span>
                 <p> it is so easy website and i love it .</p>
             </div>

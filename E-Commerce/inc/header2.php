@@ -1,5 +1,5 @@
-<?php require "config.php"; ?>
-<?php include "functions/db.php" ?>
+<?php include "./functions/db.php" ?>
+<?php include "./config.php" ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -9,10 +9,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Store | products</title>
-    <link rel="icon" href="<?php echo ASSETS; ?>images/logo-removebg-preview%20(1).png">
-    <link rel="stylesheet" href="<?php echo ASSETS; ?>css/all.css">
-    <link rel="stylesheet" href="<?php echo ASSETS; ?>css/bootstrap.min.css">
-    <link rel="stylesheet" href="<?php echo ASSETS; ?>css/style.css">
+    <link rel="icon" href="./assets/images/logo-removebg-preview%20(1).png">
+    <link rel="stylesheet" href="./assets/css/all.css">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
@@ -35,29 +35,29 @@
 
                     </div>
 
-                    <!-- <?php include "inc/searchBar.php"; ?> -->
+                    <!-- <?php include "./inc/searchBar.php"; ?> -->
 
                     <div class="col-md-3" id="ulCard">
                         <ul class="navbar-nav">
                             <?php if (!isset($_SESSION['userf_name'])) : ?>
                                 <li class="nav-item ">
-                                    <a class="nav-link " aria-current="page " href="login.php"><i class="fas fa-user"></i></a>
+                                    <a class="nav-link " aria-current="page " href="./login.php"><i class="fas fa-user"></i></a>
                                 </li>
                             <?php endif; ?>
                             <?php if (isset($_SESSION['userf_name'])) : ?>
                                 <li class="nav-item ">
-                                    <a class="nav-link " aria-current="page " id="cart" href="cart.php"><span><i class="fas fa-shopping-cart"></i></span></a>
+                                    <a class="nav-link " aria-current="page " id="cart" href="./cart.php"><span><i class="fas fa-shopping-cart"></i></span></a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link " aria-current="page " id="favorite" href="favourite.php"><span><i class="fa-solid position-relative fa-heart top-0 end-0 "></i></span></a>
+                                    <a class="nav-link " aria-current="page " id="favorite" href="./favourite.php"><span><i class="fa-solid position-relative fa-heart top-0 end-0 "></i></span></a>
                                 </li>
                             <?php endif; ?>
                             <?php if (!isset($_SESSION['userf_name'])) : ?>
                                 <li class="nav-item ">
-                                    <a class="nav-link " aria-current="page " id="cart" href="login.php"><span><i class="fas fa-shopping-cart"></i></span></a>
+                                    <a class="nav-link " aria-current="page " id="cart" href="./login.php"><span><i class="fas fa-shopping-cart"></i></span></a>
                                 </li>
                                 <li class="nav-item ">
-                                    <a class="nav-link " aria-current="page " id="favorite" href="login.php"><span><i class="fa-solid position-relative fa-heart top-0 end-0 "></i></span></a>
+                                    <a class="nav-link " aria-current="page " id="favorite" href="./login.php"><span><i class="fa-solid position-relative fa-heart top-0 end-0 "></i></span></a>
                                 </li>
 
                             <?php endif; ?>

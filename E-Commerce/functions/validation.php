@@ -15,6 +15,7 @@ function ValidEmail($input)
     }
     return true;
 }
+
 function checkless($input,$min)
 {
     if(trim(strlen($input<=$min)))

@@ -1,13 +1,13 @@
 <section class="quick-links">
 
-<a href="index.php" class="logo"> <i class="fas fa-store"></i> Store </a>
+<a href="./index.php" class="logo"> <i class="fas fa-store"></i> Store </a>
 
 <div class="links">
-    <a href="index.php"> home </a>
-    <a href="about.php"> about </a>
-    <a href="products.php"> products </a>
-    <a href="contact.php"> contact </a>
-    <a href="cart.php"> cart </a>
+    <a href="./index.php"> home </a>
+    <a href="./about.php"> about </a>
+    <a href="./products.php"> products </a>
+    <a href="./contact.php"> contact </a>
+    <a href="./cart.php"> cart </a>
 </div>
 
 <div class="share">
@@ -33,7 +33,7 @@
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="<?php echo ASSETS; ?>js/Home.js"></script>
+<script src="./assets/js/Home.js"></script>
 
 </body>
 

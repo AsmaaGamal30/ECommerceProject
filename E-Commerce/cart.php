@@ -11,15 +11,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Store | Cart</title>
-    <link rel="icon" href="<?php echo ASSETS; ?>images/logo-removebg-preview%20(1).png">
+    <link rel="icon" href="assets/images/logo-removebg-preview%20(1).png">
     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="<?php echo ASSETS; ?>css/all.css">
+    <link rel="stylesheet" href="assets/css/all.css">
 
     <!-- swiper css link  -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- cusom css file link  -->
-    <link rel="stylesheet" href="<?php echo ASSETS; ?>css/contact,cart.css">
+    <link rel="stylesheet" href="assets/css/contact,cart.css">
 
 </head>
 
@@ -91,7 +91,12 @@
     <br>
     <br>
     <br>
-
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
 </section <!-- shopping cart section ends -->
 
