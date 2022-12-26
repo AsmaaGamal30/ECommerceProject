@@ -135,14 +135,14 @@ require "inc/sidebar.php";
 
             <div class="swiper-slide slide">
                 <img src="<?php echo ASSETS; ?>images/pic-4.png" alt="">
-                <h3>sola ahmed</h3>
+                <h3>Nahla</h3>
                 <span>designer</span>
                 <p>thanks alot for a quick service </p>
             </div>
 
             <div class="swiper-slide slide">
                 <img src="<?php echo ASSETS; ?>images/pic-5.png" alt="">
-                <h3>nahla nabil</h3>
+                <h3>Abdelrahman</h3>
                 <span>doctor</span>
                 <p> it is so easy website and i love it .</p>
             </div>
